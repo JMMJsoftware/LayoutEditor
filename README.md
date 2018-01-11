@@ -57,6 +57,6 @@ In the end plug Layout Editor property in a template by adding _@using JMMJ.Layo
 
 ## License
 
-Copyright &copy; 2018 [JMMJ s.c.](http://jmmj.software/), and other contributors
+Copyright &copy; 2018 [JMMJ](http://jmmj.software/), and other contributors
 
 Licensed under the MIT License.
