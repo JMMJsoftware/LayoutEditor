@@ -1,7 +1,7 @@
 # Umbraco Layout Editor
 
 [![NuGet release](https://img.shields.io/nuget/v/JMMJ.LayoutEditor.svg)](https://www.nuget.org/packages/JMMJ.LayoutEditor)
-[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)]()
+[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.org/projects/website-utilities/layout-editor/)
 
 The Layout Editor is used to construct modular site content in a flexible WYSIWYG editor based on Umbraco Macros.
 
@@ -15,7 +15,7 @@ The Layout Editor package is available from NuGet, Our Umbraco, or directly from
 
 #### Our Umbraco
 
-A downloadable Umbraco package is available on the [Our Umbraco](https://our.umbraco.org/projects/website-utilities/layouteditor/). You can install it by Umbraco backoffice.
+A downloadable Umbraco package is available on the [Our Umbraco](https://our.umbraco.org/projects/website-utilities/layout-editor/). You can install it by Umbraco backoffice.
 
 #### NuGet package
 
