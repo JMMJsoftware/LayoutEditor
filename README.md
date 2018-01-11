@@ -30,7 +30,7 @@ To install from [NuGet](https://www.nuget.org/packages/JMMJ.LayoutEditor/), run 
 [MacroDialog]: https://raw.githubusercontent.com/JMMJsoftware/LayoutEditor/master/Docs/img/macro-dialog.jpg "Macro Dialog"
 [PropertyEditor]: https://raw.githubusercontent.com/JMMJsoftware/LayoutEditor/master/Docs/img/property-editor.jpg "Property Editor"
 
-After installing the package you need to create create a new Data Type based on LayoutEditor via the Umbraco backoffice.
+After installing the package you need to create a new Data Type based on LayoutEditor via the Umbraco backoffice.
 
 ![Data Type][DataType]
 
@@ -44,9 +44,9 @@ Then add yours Macros to Layout Editor.
 
 ### Important
 
-To properly render layout in backoffice (same as in front-end), add yours stylesheet link at "_/Partials/LayoutEditor/_Component.cshtml_" partial.
+To render layout in the backoffice properly (same as in the front-end), add your stylesheet link to the "_/Partials/LayoutEditor/_Component.cshtml_" partial.
 
-At the end plug Layout Editor property in a template by adding _@using JMMJ.LayoutEditor.Helpers_ and below code:
+In the end plug Layout Editor property in a template by adding _@using JMMJ.LayoutEditor.Helpers_ and insert the code below:
 
 ```c#
 @Html.LayoutEditor(Model.Content, "propertyAlias")
