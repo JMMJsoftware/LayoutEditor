@@ -1,0 +1,72 @@
+﻿.layout-editor .layout-placeholder {
+    position: relative;
+    min-height: 65px;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    border: 4px dashed #d8d7d9;
+    margin-bottom: 10px;
+}
+
+.layout-editor .layout-placeholder:hover {
+    border: 4px dashed #00aea2;
+}
+
+.layout-editor .add-row {
+    text-align: center;
+}
+
+.layout-editor .add-row a {
+    display: inline-block;
+    padding-top: 14px;
+    padding-right: 15px;
+    padding-left: 16px;
+    padding-bottom: 11px;
+    margin: 2px;
+    cursor: pointer;
+    background: #f3f3f5;
+    border: 1px solid #bbbabf;
+    border-radius: 200px;
+    text-decoration: none;
+}
+
+.layout-editor .remove-row a {
+    float: right;
+    margin-top: -13px;
+    margin-bottom: 5px;
+    margin-right: -12px;
+    text-decoration: none;
+}
+
+.layout-editor .remove-row a i {
+    font-size: 17px !important;
+}
+
+.layout-editor .component iframe {
+    width: 100%;
+    height: 300px;
+    pointer-events: none;
+    cursor: default;
+}
+
+.layout-editor .component iframe body {
+    height: auto !important;
+    overflow: auto !important;
+}
+
+.layout-editor .tool-bar {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.layout-editor .tool-bar a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.layout-editor iframe {
+    background: none;
+}

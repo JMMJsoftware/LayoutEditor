@@ -1,0 +1,47 @@
+﻿<div ng-controller="JMMJ.LayoutEditor" class="layout-editor">
+    <div class="tool-bar">
+        <a ng-click="setReorder(true)" ng-hide="reorder"><i class="icon icon-navigation" title="Reorder"></i> Reorder</a>
+        <a ng-click="setReorder(false)" ng-show="reorder"><i class="icon icon-navigation" title="Reorder"></i> I am done reordering</a>
+    </div>
+    <div class="layout-row" ui-sortable="sortableOptions" ng-model="model.value">
+        <div class="layout-placeholder" ng-repeat="macro in model.value track by $index">
+            <div ng-hide="reorder">
+                <div class="remove-row">
+                    <a ng-click="removeMacro($index)"><i class="icon icon-trash" title="Remove"></i></a>
+                </div>
+                <div ng-click="setMacro($index)">
+                    <div ng-if="!macro">
+                        <i class="icon icon-settings-alt"></i>
+                        <div class="help-text">{{macro.macroAlias}}</div>
+                    </div>
+                    <div class="component" ng-if="macro" ng-init="loadMacro('macro_' + $index, $index, macro.macroAlias)">
+                        
+                        <iframe-directive iframe-data="iframes.htmlNodes['macro_'+$index].data" iframe-dummy="/Start.html"></iframe-directive>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="reorder">
+                <h3>{{macro.macroAlias}}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-row">
+        <a ng-click="setMacro()"><i class="icon icon-add" title="Add"></i></a>
+    </div>
+
+    <umb-overlay ng-if="macroPickerOverlay.show"
+                 model="macroPickerOverlay"
+                 view="macroPickerOverlay.view"
+                 position="right">
+    </umb-overlay>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.layout-editor').closest('.controls')
+            .css('margin-left', '0')
+            .find('.control-label')
+            .css('display', 'none');
+    });
+</script>

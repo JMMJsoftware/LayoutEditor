@@ -1,0 +1,22 @@
+﻿{
+    propertyEditors: [{
+            alias: "LayoutEditor",
+            name: "Layout Editor",
+            hideLabel: true,			
+            editor: {
+                view: "~/App_Plugins/LayoutEditor/Views/LayoutEditor.html",
+				valueType: "JSON",
+				validation: {},
+				isReadOnly: false 
+            }
+        }
+    ],
+    javascript: [
+		"~/App_Plugins/LayoutEditor/Js/angular-sanitize.min.js",
+		"~/App_Plugins/LayoutEditor/Js/LayoutEditor.Iframe.directive.js",
+        "~/App_Plugins/LayoutEditor/Js/LayoutEditor.controller.js"
+    ],
+	css: [
+		"~/App_Plugins/LayoutEditor/Css/editor.css"
+	]
+}

@@ -1,0 +1,10 @@
+﻿@model Newtonsoft.Json.Linq.JArray
+
+@{
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+
+    foreach (var component in Model)
+    {
+        @umbracoHelper.RenderMacro((string)component["macroAlias"], (object)component["macroParamsDictionary"])
+    }
+}
